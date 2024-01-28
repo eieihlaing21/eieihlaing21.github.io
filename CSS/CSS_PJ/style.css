@@ -345,8 +345,7 @@ font-style: italic;
     text-decoration: none;
     color: black;
     opacity: .7;
-    padding: 0px 5px;
-    
+    padding: 0px 5px;   
 }
 .product_icon{
     color: rgb(182, 158, 158);
@@ -381,7 +380,7 @@ font-style: italic;
 .categories_name{
     display: inline-block;
     padding: 30px 10px 0px 0px;
-    margin: 10px 10px 10px;
+    margin: 10px 10px 0px 10px;
     color: black;
     
 }
@@ -400,6 +399,13 @@ font-style: italic;
 .categories_button:hover{
     background-color: red;
     color: white;
+}
+.categories_name a:hover{
+    color: red;
+}
+.categories_name a{
+    text-decoration: none;
+    margin-bottom: 30px;
 }
 /*end product_categories */
 
@@ -446,6 +452,7 @@ font-style: italic;
     border: 2px solid red;
     margin-top: 5px;
 }
+
 /* end about */
 
 /* start contact */
