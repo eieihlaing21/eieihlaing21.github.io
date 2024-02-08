@@ -1,0 +1,25 @@
+/* font design */
+@font-face{
+    font-size: domine;
+    src: url(../Domine/Domine-VariableFont_wght.ttf);
+}
+*{font-family: domine;}
+.logo{
+    width: 120px;
+    height: 80px;
+}
+.navbar_hover:hover{
+    color: red;
+}
+.dropdown-toggle::after{
+    margin-left: 0.5em !important;
+}
+.cart_noti{
+    position: relative;
+    top: -45px;
+    left: 25px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 3px 4px;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion</title>
+    <link rel="stylesheet" href="bootstrap_lesson/css/bootstrap.min.css">
+</head>
+<body>
+   <h1 class="text-center text-danger my-5">Accordion Lessons</h1>
+   <div class="accordion" id="Accordion_parent">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+            <button class="accordion-button" data-bs-target="#Accordion_one" data-bs-toggle="collapse">One</button></h2>
+            <div id="Accordion_one" class="collapse accordion-collapse show" data-bs-parent="#Accordion_parent">
+                <div class="accordion-body">
+                    <p>One Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae sequi porro debitis harum voluptate, ipsa nemo tenetur itaque sunt recusandae saepe cupiditate quasi commodi adipisci dolorum delectus. Aliquid, voluptas recusandae?</p>
+                </div>
+            </div> 
+        </div>
+
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <a href="#Accordion_two"data-bs-toggle="collapse" class="accordion-button btn">Two</a>
+            </div>
+            <div class="collapse accordion-collapse" id="Accordion_two" data-bs-parent="#Accordion_parent">
+                <div class="accordion-body">
+                    <p>Two Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo optio sed veritatis hic magni esse iure non vero laboriosam earum, quisquam doloribus quibusdam fugiat officiis ipsa doloremque, consectetur, suscipit numquam.</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <a href="#Accordion_three"data-bs-toggle="collapse" class="accordion-button btn">Three</a>
+            </div>
+            <div class="collapse accordion-collapse" id="Accordion_three" data-bs-parent="#Accordion_parent">
+                <div class="accordion-body">
+                    <p>Three Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo optio sed veritatis hic magni esse iure non vero laboriosam earum, quisquam doloribus quibusdam fugiat officiis ipsa doloremque, consectetur, suscipit numquam.</p>
+                </div>
+            </div>
+        </div>
+   </div> 
+</body>
+<script src="bootstrap_lesson/js/bootstrap.bundle.min.js"></script>
+</html>
