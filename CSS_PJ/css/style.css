@@ -1,0 +1,455 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #f1ddcf;
+    color: #4fa829;
+}
+.navbar {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding: 2px;
+    gap: 20px;
+    align-items: center;
+    background-color: #d1fc4b;
+}
+.nav_menu ul {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 10px;
+    justify-content: end;
+}
+.nav_menu ul li {
+    display: inline;
+    list-style-type: none;
+
+}
+.nav_menu ul li a {
+    text-decoration: none;
+    color: #4fa829;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-right: 50px;
+}
+.nav_menu ul li a:hover {
+    background-color: #7f684e;
+    color: #f8f6f0;
+}
+.nav_logo {
+   display: flex;
+   align-items: center;
+}
+.nav_logo img {
+    width: 150px;
+    height: 80px;
+    padding: 0px 10px 0px 70px;
+}
+/* start hero */
+.hero_container {
+    background-image: url(../images/nct_group.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 600px;
+} 
+.hero_text h2 i {
+    color: #483c32;
+}
+.hero {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 300px 230px 0 230px;
+    background-color: #f8f6f0;
+    width: 1000px;
+    height: auto;
+    border: 0px solid black;
+    border-radius: 10px;
+    padding-bottom: 0;
+}
+.hero_img {
+    position: relative;
+    width: 400px;
+    height: auto;
+    border: 0px solid #eff9bb;
+    border-radius: 5px;
+}
+.hero_text {
+    color: #242521;
+    padding: 0 0 0 50px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 18px;
+   
+}
+.hero_text h2{
+    padding: 20px 0;
+    font-size: 30px;
+    letter-spacing: 2px;
+} 
+.hero_text .profile_text {
+    font-weight: bold;
+    font-size: 20px;
+    padding-right: 30px;
+}  
+.hero_text p {
+    padding-bottom: 5px;
+} 
+.hero_text .canada_flag {
+    width: 5%;
+    height: 5%;
+    margin-left: 10px;
+}
+.hero_text .canada_logo {
+    width: 10%;
+    height: 10%;
+    /* float: right;
+    padding: 0 150px 0 0; */
+    margin-left: 10px;
+    margin-top: 0;
+}
+/* end hero */
+
+/* start about */
+.about {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 400px 100px 40px 100px;
+}
+.about_img {
+    width: auto;
+    height: auto;
+    margin-right: 40px;
+
+}
+.about_text {
+    font-size: 19px;
+    letter-spacing: 0.5px;
+    color: #000000;
+    line-height: 32px;
+}
+.about_text p {
+    padding-bottom: 10px;
+    text-align: justify;
+    padding-right: 10px;
+}
+.about_text p a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+.about_nct_img {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+.nct_img {
+    width: 250px;
+    height: 200px;
+} 
+.about_nct_img h4 {
+    text-align: center;
+}
+.about_text a:hover {
+    color: #4fa829;
+    font-weight: bold;
+    font-size: 20px;
+}
+/* end about */
+
+/* start Discography */
+.disco {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 10px 100px 20px 100px;
+    gap: 20px;
+}
+.disco_title i {
+    color: #483c32;
+    font-size: 30px;
+}
+.disco_title {
+    padding: 80px 0px 20px 0;
+    text-align: center;
+    color: #000000;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 30px;
+}
+.disco_text {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+.disco_item {
+    border: 2px solid #f1ddcf;
+    border-radius: 5px;
+    background-color: #f8f6f0;
+}
+.disco_img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #f1ddcf;
+    border-radius: 5px;
+}
+.content a , h3{
+    color: black;
+    text-decoration: none;
+    padding: 0px ;
+    letter-spacing: 1px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+.content p {
+    color: #242521;
+    padding: 15px 8px;
+    /* text-align: justify; */
+    font-size: 18px;
+    /* letter-spacing: 1px; */
+}
+.disco_text {
+   color: #242521;
+   padding: 10px 20px;
+   font-weight: bold;
+}
+.sub_title {
+    margin-bottom: 8px;
+}
+.disco_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 50px 0;
+}
+.show_btn {
+text-decoration: none;
+background-color: #f8f6f0;
+padding: 10px;
+border: 1px solid #f1ddcf;
+border-radius: 5px;
+color: #000000;
+letter-spacing: 1px;
+}
+.disco_btn a:hover {
+    background-color: #7f684e;
+    color: #f8f6f0;
+}
+/* end Discography */
+
+/* start concerts */
+.concerts {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 80px 100px 40px 100px;
+}
+.concerts_title {
+    margin-top: 50px;
+}
+.concerts_detail {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    margin-top: 20px;
+}
+.concerts_img {
+    width: auto;
+    height: auto;
+    margin-left: 40px;
+}
+.concerts_text {
+    font-size: 19px;
+    letter-spacing: 0.5px;
+    color: #000000;
+    line-height: 32px;
+    padding-top: 50px;
+}
+.concerts_text h2 {
+    margin-bottom: 20px;
+}
+.concerts_text p {
+    padding-bottom: 20px;
+    text-align: justify;
+}
+.concerts_text p span {
+    font-weight: bold;
+    color: #000;
+}
+.concerts_btn {
+    
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 50px 0;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.concerts_show_btn {
+text-decoration: none;
+background-color: #f8f6f0;
+padding: 15px;
+border: 1px solid #f1ddcf;
+border-radius: 5px;
+color: #242521;
+}
+.concerts_btn a:hover {
+    background-color: #7f684e;
+    color: #f8f6f0;
+}
+
+.dream_concerts {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 80px 100px 40px 100px;
+
+}
+.dream_concerts_img {
+    width: auto;
+    height: auto;
+    margin-right: 40px;   
+}
+.concerts_text i {
+    color: #483c32;
+}
+/* end concerts */
+
+/* start awards */
+.awards {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+padding: 0px 100px 40px 100px;
+gap: 20px;
+}
+.awards_title {
+    padding: 80px 0 20px 0;
+    text-align: center;
+    color: #000000;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 30px;
+}
+.award_img {
+    width: 100%;
+    height: 100%;
+}
+.nct_award {
+    background-color: #f8f6f0;
+    border: 1px solid #f1ddcf;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #242521;
+    
+    margin-bottom: 80px;
+}
+.awards_title i {
+    color: #996515;
+}
+.awards_text {
+    display: flex;
+    gap: 50px;
+    padding: 0px 10px 10px 10px;
+    background-color: #f8f6f0;
+    border: 1px solid #f1ddcf;
+}
+.award_header {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+/* end awards */
+
+/* start comment */
+.comment {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.comment_bgn {
+    background-color: #f8f6f0;
+    margin: 80px 100px 20px 100px;
+}
+.comment_title {
+    padding: 20px 0 20px 0;
+    text-align: center;
+    color: #000000;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 30px;    
+}
+.form_group {
+    margin-bottom: 20px;
+    font-size: 14px;
+}   
+.form_group label {
+    display: block;
+    font-weight: bold;
+} 
+.form_group input, .form_group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #483c32;
+    border-radius: 5px;
+    background-color: #f1ddcf;
+   
+}
+.contact_form button {
+    margin: 0 auto;
+    display: block;
+    width: 30%;
+}
+.comment_btn {
+    padding: 10px;
+    border: 1px solid #483c32;
+    border-radius: 5px;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.comment_btn:hover {
+    color: #f8f6f0;
+    background-color: #7f684e;
+}
+.social h2 {
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #000000;
+    text-align: center;
+    font-size: 19px;
+}
+.social_link {
+    text-align: center;
+    padding: 20px;
+    color: #000;
+}
+.social_link p {
+    margin-bottom: 20px;
+}
+.icon {
+    color: #d58a94;
+    background-color: #f8f6f0;
+    border: 1px solid #f8f6f0;
+    border-radius: 50px;
+    padding: 5px;
+}
+/* end comment */
+
+/* start footer */
+.footer_title{
+    margin-top: 8cqmax;
+    background-color: #242521;
+    padding: 40px 300px 0px 400px;
+}
+.footer_text {
+    color: #f8f6f0;
+    text-align: center;
+    margin-top: 100px;
+    letter-spacing: 1px;
+}
+.footer_text p span {
+    color: #4fa829;
+    font-weight: bold;
+}
+
+/* end footer */
