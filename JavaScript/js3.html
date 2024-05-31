@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Operator Lesson</h1>
+
+    <script>
+        // Operator
+        // Addition Operator
+        let three = 2 + 1;
+        document.write("<h3>"+ three + "</h3>");
+        let four = three + 1;
+        document.write("<h3>"+ four + "</h3>");
+        let threeOne = 'three' + 1; // string + number;
+        document.write("<h3>"+ threeOne + "</h3>");
+        let str = '24' + '34'; //string + string 
+        document.write("<h3>"+ str + "</h3>");
+        let number= 5;
+        number += 10; //number = number + 10;
+        document.write("<h3>"+ number + "</h3>");
+
+        // Substration Operator
+        let two = 3 - 1;
+        document.write("<h3>"+ two + "</h3>");
+        let five = '6' - '1'; // string operators but works as number in substration
+        document.write("<h3>"+ five + "</h3>");
+        let num= 25;
+        num -= 5; //num = num - 5;
+        document.write("<h3>"+ num + "</h3>");
+
+        // Division
+        let div1 = 20 / 5;
+        document.write("<h3>"+ div1 + "</h3>");
+        let div2 = 20 / 7;
+        document.write("<h3>"+ div2 + "</h3>");
+        document.write("<h3>"+ div2.toFixed(2) + "</h3>");
+        let div3 = 1 / 0;
+        document.write("<h3>"+ div3 + "</h3>"); // infinity
+        let div= 20;
+        div /= 5; //div = div / 5;
+        document.write("<h3>"+ div + "</h3>");
+
+        // Remainder
+        let ren1 = 20 % 5;
+        document.write("<h3>"+ ren1 + "</h3>");
+        let ren2 = 20 % 7;
+        document.write("<h3>"+ ren2 + "</h3>");
+        let ren3 = 1 % 0;
+        document.write("<h3>"+ ren3 + "</h3>"); // NaN --> Not a Number
+        let ren= 25;
+        ren %= 2; //ren = ren % 2;
+        document.write("<h3>"+ ren + "</h3>");
+
+        // Multiplication
+        let mul1 = 12 * 12;
+        document.write("<h3>"+ mul1 + "</h3>");
+        let mul2 = -12 * 12;
+        document.write("<h3>"+ mul2 + "</h3>");
+        let mul= 25;
+        mul *= 5; //mul = mul * 5;
+        document.write("<h3>"+ mul + "</h3>");
+
+        //Exponentation
+        let exp = 2 ** 4;
+        document.write("<h3>"+ exp + "</h3>");
+
+        //Precendence
+        // * / % + - =
+        let total = 1 * 2 + 5 / 2 % 2 ;
+                    // 2 + 5 / 2 % 2 
+                    // 2 + 2.5 % 2
+                    // 2 + 0.5
+                    // 2.5
+        document.write("<h3>"+ total + "</h3>");   
+        
+        // Comparison Operator
+        // > , < , >= , <= , == , === , !
+
+        let n = 12;
+        let m= '12';
+
+        document.write(n < 5);
+        document.write('<br>');
+        document.write(n > 4);
+        document.write('<br>');
+        document.write(n < 14);
+        document.write('<br>');
+        document.write(n >= 23);
+        document.write('<br>');
+        document.write(n >= 11);
+        document.write('<br>');
+        document.write(n >= 12);
+        document.write('<br>');
+        document.write(n <= 14);
+        document.write('<br>');
+        document.write(n <= 12);
+        document.write('<br>');
+        document.write(n == 4);
+        document.write('<br>');
+        document.write(n == 12);
+        document.write('<br>');
+        document.write(n == m); //true--> check only value
+        document.write('<br>');
+        document.write(n === m); //false--> check  value and data type
+        document.write('<br>');
+        document.write(n != 4); 
+        document.write('<br>');
+        document.write(n != m); //true--> check only value
+        document.write('<br>');
+        document.write(n !== m); //false--> check  value and data type
+        document.write('<br>');
+
+        //Logical Operator
+        //AND --> && true all
+        //OR --> || work only one true
+        //NOT !
+
+        document.write('<br>');
+        document.write(12 < 13 && 15 > 11 && 10 > 5);
+        //12 < 13 && 15 > 11 && 10 > 5  
+        // true && true && true
+        // 1 * 1 * 1
+        //1--> true
+        
+        document.write('<br>');
+        document.write(10 < 12 || 13 > 21 || 23 > 11);
+        //10 < 12 || 13 > 21 || 23 > 11
+        //true || false || true
+        //1 + 0 + 1 
+        // 1--> true
+
+        // AND *
+        // OR +
+    </script>
+</body>
+</html>

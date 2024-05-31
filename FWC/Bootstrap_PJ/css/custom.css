@@ -4,6 +4,8 @@
     src: url(../Domine/Domine-VariableFont_wght.ttf);
 }
 *{font-family: domine;}
+/* end font design */
+/* start nav */
 .logo{
     width: 120px;
     height: 80px;
@@ -23,3 +25,23 @@
     border-radius: 50%;
     padding: 3px 4px;
 }
+.dropdown-menu{
+    --bs-dropdown-link-active-color: #fff;
+    --bs-dropdown-link-active-bg: red;
+}
+/* end nav */
+
+/* start carousel */
+.carousel_text{
+    position: absolute;
+    top: 25%;
+    left: 13%;
+    background-color: rgba(20, 35, 20, .5);
+    padding: 30px;
+    border-radius: 5px;
+    color: white;
+}
+.btn{
+    padding: 0.5rem !important;
+}
+/* end carousel */

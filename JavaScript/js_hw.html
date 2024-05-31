@@ -33,17 +33,39 @@
             let js = document.examForm.js.value;
             console.log(js);
 
-            if ((html > 80 && html >= 50) && (css >= 50) && ( js >= 50)) {
-                document.write('<h1 style="color:gold;">'+ name + ' is Distinction.</h3>');
-            }else if ((html >= 50) && (css > 80 && css >= 50) && ( js >= 50)) {
-                document.write('<h1 style="color:gold;">'+ name + ' is Distinction.</h3>');
-                    }else if ((html >= 50) && (css >= 50) && (js > 80 && js >= 50)) {
-                            document.write('<h1 style="color:gold;">'+ name + ' is Distinction.</h3>');
-                            }else if (html >= 50 && css >= 50 && js >= 50) {
-                                        document.write('<h1 style="color:green;">'+ name + ' is Pass.</h3>');
-                                    }else {
-                                            document.write('<h1 style="color:red;">'+ name + ' is Fail.</h3>');
-                                        }
+            // if ((html > 80 && html >= 50) && (css >= 50) && ( js >= 50)) {
+            //     document.write('<h1 style="color:gold;">'+ name + ' is Distinction.</h3>');
+            // }else if ((html >= 50) && (css > 80 && css >= 50) && ( js >= 50)) {
+            //     document.write('<h1 style="color:gold;">'+ name + ' is Distinction.</h3>');
+            //         }else if ((html >= 50) && (css >= 50) && (js > 80 && js >= 50)) {
+            //                 document.write('<h1 style="color:gold;">'+ name + ' is Distinction.</h3>');
+            //                 }else if (html >= 50 && css >= 50 && js >= 50) {
+            //                             document.write('<h1 style="color:green;">'+ name + ' is Pass.</h3>');
+            //                         }else {
+            //                                 document.write('<h1 style="color:red;">'+ name + ' is Fail.</h3>');
+            //                             }
+            if ((html >= 50 && html <= 100) && (css >= 50 && css <= 100) && (js >= 50 && js <= 100)) {
+                if ((html >= 81 && html <= 100) || (css >= 81 && css <= 100) || (js >= 81 && js <= 100)){
+                    if (html >= 81 && html <= 100){
+                        document.write('<h1 style="color:gold;">'+ name + ' is Pass with HTML Subject Distinction.</h1>'); 
+                    }
+
+                    if (css >= 81 && css <= 100){
+                        document.write('<h1 style="color:gold;">'+ name + ' is Pass with CSS Subject Distinction.</h1>'); 
+                    }
+                    if (js >= 81 && js <= 100){
+                        document.write('<h1 style="color:gold;">'+ name + ' is Pass with Java Script Subject Distinction.</h1>'); 
+                    }
+                }else { 
+                    document.write('<h1 style="color:green;">'+ name + ' is Pass.</h1>'); 
+
+                }
+
+            }else if (html > 100 || css > 100 || js > 100) {
+                        document.write('<h1 style="color:brown;">Mark is Over.</h1>'); 
+            }else {
+                document.write('<h1 style="color:red;">'+ name + ' is Fail.</h1>'); 
+            }
         }
     </script>
 </body>

@@ -502,6 +502,7 @@ footer {
     padding-left: 50px;   
     letter-spacing: 2px; 
     color: #e35b89;
+    margin-bottom: 0;
 }
 .footer_text p span {
     color: #f8f6f0;

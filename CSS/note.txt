@@ -1,0 +1,133 @@
+CSS Syntax
+Selector{
+    property : value;
+}
+face{
+    foundation : tonor;
+    skin-care : serum;
+}
+3 ways to insert CSS-->1.External Stylesheet
+                       2.Inline Stylesheet
+                       3.Internal Stylesheet
+
+Colors
+-text (eg.red,white,green)
+-hexadecimal color code(#ffAA50)-->0 to 9 and A to F
+    -R  G  B
+    -00 00 00   
+-RGB rgb(red, green, blue)-->0 to 255
+-RGBA rgba(red, green, blue, alpha-->0 to 1)
+
+Measurement Units
+
+ -Absolute Length Units
+    -px(Pixels) 96 px = 1 in
+    -pt(Points) 72 pt = 1 in
+    -pc(Picas) 12 pt = 1 pc
+    -cm(centemeter) 37.795276 px = 1 cm
+    -mm(millimeter) 10 mm = 1 cm
+    -in(inches) 1 in = 2.54 cm =
+
+ -Relative Length Units
+    -em()
+    -%(percent)
+    -rem()
+    -ch()
+    ex()
+Selector
+ -Universal Selector 
+   -for all elements
+  *{
+
+  } 
+ -Element Selector
+   -for tag name/tag elements
+   p{
+
+   }
+   h2{
+
+   }
+   p,h1,div{
+
+   } 
+ -Id Selector
+   -value of id attribute
+   #{
+
+   }
+ -Class Selector
+   -value of class attribute
+   .{
+
+   }  
+ -Attribute Selector
+   -attribute name
+   a[title="google"]
+   input[type="text"]   
+ -Descendant Selector
+   -for all under tags 
+   div p{
+
+   }  
+ -Child Selector
+   -only under tags
+   div>p{
+
+   }  
+ -Pseudo Selector
+   -:hover
+   -:visited
+   -:active
+   -:focus
+   -:first-child
+   -:last-child  
+
+-Box Model
+  -Border : width style color; 
+-Margin
+  -margin(one value) 
+   -margin : all(top/right/bottom/left);
+  -margin (two values)
+   -margin :(top&bottom)/(left&right); 
+  -margin (three values)
+   -margin : top (right & left) bottom;
+  -margin (four values)
+   -margin : top right bottom left;
+-Padding
+  -padding(one value) 
+   -padding : all(top/right/bottom/left);
+  -padding (two values)
+   -padding :(top&bottom)/(left&right); 
+  -padding (three values)
+   -padding : top (right & left) bottom;
+  -padding (four values)
+   -padding : top right bottom left;
+
+-Display
+ -Inline
+   -doesn't work css properties in inline elements
+   -display as a line
+   -works margin and padding in inline elements
+ -Block
+   -works css properties in block elements
+   -doesn't display as a line
+ -Inline-Block
+   -works css properties 
+   -display as a line  
+
+-Container
+ -flex-Container
+ -flex-items
+
+ -grid-Container
+
+-fonts
+  -online--><link>
+            font family:name ;
+  -offline-->@font-face {
+            font-family: "name";
+            src: url(fonts/name/);
+        }
+
+

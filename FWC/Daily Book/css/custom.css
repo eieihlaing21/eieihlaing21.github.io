@@ -1,0 +1,43 @@
+/*start font design */
+@font-face{
+    font-size: domine;
+    src: url(../Domine/Domine-VariableFont_wght.ttf);
+}
+*{font-family: domine;}
+/* end font design */
+
+/* start nav */
+.logo{
+    width: 120px;
+    height: 80px;
+}
+.navbar_hover:hover{
+    color: white;
+}
+.cart_noti{
+    position: relative;
+    top: -16px;
+    right: 11px;
+    color: black;
+    border-radius: 50%;
+    padding: 2px 4px;
+    background-color: #a18f65;
+}
+.nav_icon_hover:hover{
+    border-radius: 1px solid #a18f65;
+}
+input{
+    border-color: #a18f65;
+    background-color: lightyellow;
+}
+.dropdown-menu{
+    --bs-dropdown-link-active-color: #fff;
+    --bs-dropdown-link-active-bg: #FFC107;
+}
+/* end nav */
+/* start best selling book container*/
+
+/* end best selling book container*/
+/* start footer */
+
+/* end footer */

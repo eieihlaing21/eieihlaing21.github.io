@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name">
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">   
+        <br><br>
+        <button onclick="show()" type="button">Show</button>
+        <br><br><br>
+    </form>    
+        <table border="1" cellspacing="0" cellpadding="20">
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody id="tBody">
+    
+            </tbody>
+        </table>
+    <script>
+        let i = 1;
+        function show() {
+            console.log(i);
+            let name = document.querySelector('#name').value;
+            console.log(name);
+            let email = document.querySelector('#email').value;
+            console.log(email);
+            let tbody = document.querySelector('#tBody');
+            tbody.innerHTML += `<tr>
+                               <td>${i++}</td>
+                                <td>${name}</td>
+                                <td>${email}</td>
+                               </tr>`;
+           
+        }
+    </script>
+</body>
+</html>

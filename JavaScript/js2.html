@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Data Type</h1>
+
+    <script>
+        //String Data Type
+        let name = "Ei Ei Hlaing";
+        document.write("<h2>"+ name + "</h2>");
+        document.write("<h2>"+ typeof(name) + "</h2>");
+
+        let job = 'Web Developer';
+        document.write("<h2>"+ job + "</h2>");
+        document.write("<h2>"+ typeof(job) + "</h2>");
+
+        //Numeric Data Type
+        let age = 23 + 10;
+        document.write("<h2>"+ age + "</h2>");
+        document.write("<h2>"+ typeof(age) + "</h2>");
+
+        let ageStr = '23'+ '10';
+        document.write("<h2>"+ ageStr + "</h2>");
+        document.write("<h2>"+ typeof(ageStr) + "</h2>");
+
+        //Boolean Data Type
+        let js=true;
+        document.write("<h2>"+ js + "</h2>");
+        document.write("<h2>"+ typeof(js) + "</h2>");
+
+        let go=false;
+        document.write("<h2>"+ go + "</h2>");
+        document.write("<h2>"+ typeof(go) + "</h2>");
+
+        //Array
+        let students = ['Mg Mg','Aung Aung','Hla Hla','Mya Mya'];
+        console.log(students);
+        console.log(typeof(students));
+        document.write("<h2>"+ students[1] + "</h2>");
+
+        let studentData = [['Mg Mg','Aung Aung','Hla Hla','Mya Mya'],[22,23,20,18],["Yangon",'Mandalay','Meiktila','Shan']];
+        console.log(studentData);
+        console.log(studentData[0]); 
+        console.log(studentData[1]);
+        console.log(studentData[2]);
+
+        document.write("<h2>"+ studentData[0][0] + "</h2>");
+        document.write("<h2>"+ studentData[1][0] + "</h2>");
+        document.write("<h2>"+ studentData[2][0] + "</h2>");
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex_container{
+            display: flex;
+            background-color: aqua;
+            flex-wrap: wrap;
+            /* flex-wrap--> nowarp(default screen) 
+            wrap--> auto 
+            wrap-reverse--> convert */
+            flex-direction: row;
+            /* flex-direction-->row,rowreverse,colreverse */
+            justify-content: center;
+            /* justify-content-->center, flex-start, flex-end, baseline */
+        }
+        .flex_container .flex_item{
+            background-color: white;
+            width: 200px;
+            margin: 50px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex_container">
+        <div class="flex_item">
+            <h3>Title 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quae. Rerum voluptates alias a exercitationem quos, aspernatur consequuntur blanditiis tenetur soluta. Distinctio dolor odio excepturi?</p>
+        </div>
+        <div class="flex_item">
+            <h3>Title 2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quae. Rerum voluptates alias a exercitationem quos, aspernatur consequuntur blanditiis tenetur soluta. Distinctio dolor odio excepturi?</p>
+        </div>
+        <div class="flex_item">
+            <h3>Title 3</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quae. Rerum voluptates alias a exercitationem quos, aspernatur consequuntur blanditiis tenetur soluta. Distinctio dolor odio excepturi?</p>
+        </div>
+        <div class="flex_item">
+            <h3>Title 4</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quae. Rerum voluptates alias a exercitationem quos, aspernatur consequuntur blanditiis tenetur soluta. Distinctio dolor odio excepturi?</p>
+        </div>
+        <div class="flex_item">
+            <h3>Title 5</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quae. Rerum voluptates alias a exercitationem quos, aspernatur consequuntur blanditiis tenetur soluta. Distinctio dolor odio excepturi?</p>
+        </div>
+    </div>
+</body>
+</html>

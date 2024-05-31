@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid_container {
+            display: grid;
+            /* fr fraction-->same as colspan */
+            /* grid-template-columns: 3fr 2fr 1fr;--> 3col 2col 1col
+            grid-template-rows: 3fr 2fr; */
+            grid-template-rows: repeat(1, 3fr);
+            grid-template-columns: repeat(4, 2fr);
+            background-color: aquamarine;
+            padding: 50px;
+            /* row-gap: 15px;
+            column-gap: 20px; */
+            gap: 20px 30px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 3fr);
+            grid-template-rows: repeat(2, 4fr);
+        }
+        .grid_item {
+            background-color: antiquewhite;
+            border: 2px solid black;
+            padding: 25px;
+            text-align: center;
+        }
+        .item1 {
+            background-color: azure;
+            grid-column: 2 / span 2;
+            grid-row: 1 / span 2;
+            /* grid-column--> position / no. of adding */
+            /* grid-row--> position / no. of adding */
+        }
+        .item5 {
+            background-color: blueviolet;
+            grid-column: 2 / span 3;
+            grid-row: 2 / span 2;
+        }
+        
+        
+
+    </style>
+</head>
+<body>
+    <div class="grid_container">
+        <div class="grid_item item1">
+            <h3>Header 1</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex, sit corporis commodi temporibus obcaecati facilis molestiae atque quia modi vitae, debitis provident omnis dolorum explicabo!</p>
+        </div>
+        <div class="grid_item item2">
+            <h3>Header 2</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex, sit corporis commodi temporibus obcaecati facilis molestiae atque quia modi vitae, debitis provident omnis dolorum explicabo!</p>
+        </div>
+
+        <div class="grid_item item3">
+            <h3>Header 3</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex, sit corporis commodi temporibus obcaecati facilis molestiae atque quia modi vitae, debitis provident omnis dolorum explicabo!</p>
+        </div>
+
+        <div class="grid_item item4">
+            <h3>Header 4</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex, sit corporis commodi temporibus obcaecati facilis molestiae atque quia modi vitae, debitis provident omnis dolorum explicabo!</p>
+        </div>
+
+        <div class="grid_item item5">
+            <h3>Header 5</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex, sit corporis commodi temporibus obcaecati facilis molestiae atque quia modi vitae, debitis provident omnis dolorum explicabo!</p>
+        </div>
+    </div>
+<br><br>
+<div class="grid-container">
+    <div class="grid-item">
+        <p>1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis illum expedita quia eum voluptatibus laboriosam dignissimos perspiciatis iste tenetur? Eos optio error aliquam, in possimus voluptas expedita. Iure consequatur nulla, a nemo ad minus aperiam blanditiis ea placeat voluptates nisi, provident voluptatibus porro magni sequi eius dolor obcaecati rem? Placeat, quos! Doloribus vero labore perspiciatis deserunt provident aliquid, ducimus quos natus laborum, impedit fugit vitae. Quibusdam nemo nam necessitatibus explicabo? Debitis inventore repellendus animi architecto quae nostrum tempora, natus ad veritatis culpa iusto magni similique laboriosam commodi officiis fugit quas accusamus aperiam eos voluptatem. Aliquam similique necessitatibus debitis possimus voluptas.</p>
+    </div>
+    <div class="grid-item">
+        <p>2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis illum expedita quia eum voluptatibus laboriosam dignissimos perspiciatis iste tenetur? Eos optio error aliquam, in possimus voluptas expedita. Iure consequatur nulla, a nemo ad minus aperiam blanditiis ea placeat voluptates nisi, provident voluptatibus porro magni sequi eius dolor obcaecati rem? Placeat, quos! Doloribus vero labore perspiciatis deserunt provident aliquid, ducimus quos natus laborum, impedit fugit vitae. Quibusdam nemo nam necessitatibus explicabo? Debitis inventore repellendus animi architecto quae nostrum tempora, natus ad veritatis culpa iusto magni similique laboriosam commodi officiis fugit quas accusamus aperiam eos voluptatem. Aliquam similique necessitatibus debitis possimus voluptas.</p>
+    </div>
+    <div class="grid-item">
+        <p>3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis illum expedita quia eum voluptatibus laboriosam dignissimos perspiciatis iste tenetur? Eos optio error aliquam, in possimus voluptas expedita. Iure consequatur nulla, a nemo ad minus aperiam blanditiis ea placeat voluptates nisi, provident voluptatibus porro magni sequi eius dolor obcaecati rem? Placeat, quos! Doloribus vero labore perspiciatis deserunt provident aliquid, ducimus quos natus laborum, impedit fugit vitae. Quibusdam nemo nam necessitatibus explicabo? Debitis inventore repellendus animi architecto quae nostrum tempora, natus ad veritatis culpa iusto magni similique laboriosam commodi officiis fugit quas accusamus aperiam eos voluptatem. Aliquam similique necessitatibus debitis possimus voluptas.</p>
+    </div>
+    <div class="grid-item">
+        <p>4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis illum expedita quia eum voluptatibus laboriosam dignissimos perspiciatis iste tenetur? Eos optio error aliquam, in possimus voluptas expedita. Iure consequatur nulla, a nemo ad minus aperiam blanditiis ea placeat voluptates nisi, provident voluptatibus porro magni sequi eius dolor obcaecati rem? Placeat, quos! Doloribus vero labore perspiciatis deserunt provident aliquid, ducimus quos natus laborum, impedit fugit vitae. Quibusdam nemo nam necessitatibus explicabo? Debitis inventore repellendus animi architecto quae nostrum tempora, natus ad veritatis culpa iusto magni similique laboriosam commodi officiis fugit quas accusamus aperiam eos voluptatem. Aliquam similique necessitatibus debitis possimus voluptas.</p>
+    </div>
+    <div class="grid-item">
+        <p>5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis illum expedita quia eum voluptatibus laboriosam dignissimos perspiciatis iste tenetur? Eos optio error aliquam, in possimus voluptas expedita. Iure consequatur nulla, a nemo ad minus aperiam blanditiis ea placeat voluptates nisi, provident voluptatibus porro magni sequi eius dolor obcaecati rem? Placeat, quos! Doloribus vero labore perspiciatis deserunt provident aliquid, ducimus quos natus laborum, impedit fugit vitae. Quibusdam nemo nam necessitatibus explicabo? Debitis inventore repellendus animi architecto quae nostrum tempora, natus ad veritatis culpa iusto magni similique laboriosam commodi officiis fugit quas accusamus aperiam eos voluptatem. Aliquam similique necessitatibus debitis possimus voluptas.</p>
+    </div>
+
+</div>
+</body>
+</html>

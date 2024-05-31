@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* universal selector */
+        * {
+            margin: 10px;
+            padding: 5px;
+            color: red;
+            text-align: center;
+            font-size: 20px;
+        }
+        /* element selector */
+        p {
+            color: yellowgreen;
+            background-color: black;
+            
+        }
+        /* id selector */
+        #id_selector {
+            color: gold;
+            background-color: black;
+            border: 5px dotted blue;
+        }
+        /* class selector */
+        .class_selector {
+            color: blueviolet;
+            background-color: greenyellow;
+            border: 5px double black;
+        }
+        /* Attribute Selector */
+        a[title="facebook"]{
+            color: black;
+            border: 1px solid royalblue;
+        }
+        /* Descendant selector */
+        div p{
+            color: blue;
+            background-color: chocolate;
+        }
+        div>p{
+            color: gold;
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <h2>Universal Selector</h2>
+    <p>This is Element Selector.</p>
+    <p id="id_selector">This is Id Selector.</p>
+    <p class="class_selector">This is Class Selector.</p>
+    <p class="class_selector">This is Class Selector2.</p>
+    <a href="" title="google">Google</a>
+    <a href="" title="facebook">Facebook</a>
+    <div>
+        <p>This is paragraph 1.</p>
+        <p>This is paragraph 2.</p>
+        <span><p>This is paragraph 3.</p></span>
+        <p>This is paragraph 4.</p>
+        <p>This is paragraph 5.</p>
+    </div>
+</body>
+</html>
