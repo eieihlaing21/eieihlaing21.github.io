@@ -307,32 +307,44 @@
           </div>
           <!-- start new letters -->
           <div class="new_letter rounded img-fluid" id="subscribe">
-            <div class="new_letter_text text-light">
-              <h2 class="text-uppercase fw-bold">Subscribe to our newsletter</h2>
-              <p class="pt-2 px-2">Tourism Myanmar produces a range of industry, media and special interest
-                newsletters.
-              </p> 
-              <p>Keep up to date and subscribe to the newsletters you would like to receive via email.</p>
-              <form action="" class="subscribe">
-                <div class="form-box">
-                  <input type="email" placeholder="Enter your email" class="px-5 rounded py-2">
-                  <button type="button" onclick="openPopup()" class="btn text-light py-2" 
-                    style="background-color: #004165;">Subscribe
-                  </button>
-                </div>
-              
-                <!--start popup -->
-                <div class="popup_container">
-             <div class="popup" id="popup">
-               <img src="image/tick1.png" alt="">
-               <h3 class="fw-bold text-light text-uppercase">Thank You!</h3>
-               <p class="text-light">You has been successfully subscribed.Thanks!</p>
-               <button type="button" onclick="closePopup()" class="btn ok_btn">OK</button>
+            <div class="row">
+              <div class="offset-md-2 col-md-8">
+                <h2 class="text-uppercase fw-bold new_letter_text text-light">Subscribe to our newsletter</h2>
               </div>
+            </div>  
+              <div class="row">
+                <div class="offset-md-2 col-md-8 text-light">
+                  <p class="pt-2 px-2">Tourism Myanmar produces a range of industry, media and special interest
+                    newsletters.
+                  </p> 
+                  <p>Keep up to date and subscribe to the newsletters you would like to receive via email.</p>
                 </div>
-              </form>
-              <!-- end popup -->
-            </div>
+              </div>
+              <div class="row">
+                <div class="offset-md-3 col-md-6">
+                  <form action="" class="subscribe">
+                    <div class="form-box">
+                      <input type="email" placeholder="Enter your email" class="px-3 rounded py-2">
+                      <button type="button" onclick="openPopup()" class="btn text-light py-2" 
+                        style="background-color: #004165;">Subscribe
+                      </button>
+                    </div>
+                    <!--start popup -->
+                  <div class="popup_container">
+                  <div class="popup" id="popup">
+                  <img src="image/tick1.png" alt="">
+                  <h3 class="fw-bold text-light text-uppercase">Thank You!</h3>
+                  <p class="text-light">You has been successfully subscribed.Thanks!</p>
+                  <button type="button" onclick="closePopup()" class="btn ok_btn">OK</button>
+                  </div>
+                  </div>
+                
+                  <!-- end popup -->
+                  </form>
+                </div>
+              </div>
+                
+            
           </div>   
           <!-- end new letters -->
         </div>
